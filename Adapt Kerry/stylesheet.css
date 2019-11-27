@@ -1,0 +1,1091 @@
+@import url('https://fonts.googleapis.com/css?family=Lato:400,700,900');
+@import url('https://fonts.googleapis.com/css?family=Lora:400,700');
+@import url('https://fonts.googleapis.com/css?family=Fjalla+One');
+@import url('https://fonts.googleapis.com/css?family=Oswald:400,600');
+@import url('https://fonts.googleapis.com/css?family=Ubuntu:400,600');
+@import url('https://fonts.googleapis.com/css?family=Gloria+Hallelujah');
+/*
+
+    Fonts are all free and ope source and can be commercially used.
+*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+/* 
+
+SCROLL BACK TO TOP BUTTON CODE TAKEN FROM W3SCHOPOLS
+https://www.w3schools.com/howto/howto_js_scroll_to_top.asp
+
+*/
+
+#myBtn {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 30px;
+    z-index: 999999;
+    border: none;
+    outline: none;
+    background-color: #eb165d;
+    color: rgb(255, 255, 255);
+    cursor: pointer;
+    padding: 15px;
+    border-radius: 10px;
+    font-size: 18px;
+}
+
+#myBtn:hover {
+    background-color: rgb(48, 48, 48);
+}
+
+.GOBACK {
+    border: none;
+    padding: 10px 10px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    font-family: 'Ubuntu', sans-serif;
+    border-radius: 90px;
+    color: #eb165d;
+    background-color: #ffffff;
+    text-transform: uppercase;
+    font-weight: 400;
+    font-size: 20px;
+    margin-top: 90px;
+    cursor: pointer;
+    margin-left: -10px;
+}
+
+.GOBACK:hover {
+    color: rgb(255, 255, 255);
+    background-color: #eb165d;
+    text-transform: uppercase;
+}
+
+header {
+    width: 100%;
+    height: 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 120px;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    background-color: rgb(255, 255, 255);
+    z-index: 1000;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+header p {
+    font-weight: 400;
+}
+
+.facebook {
+    margin-right: 20px;
+    margin-top: 2px;
+    font-size: 20px;
+    color: #2c65af;
+}
+
+.facebook:hover {
+    color: #5687c7;
+}
+
+.details {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 12px;
+}
+
+.address {
+    margin-right: 40px;
+}
+
+.safeexitbtn {
+    text-decoration: none;
+    letter-spacing: 3px;
+    color: #eb165d;
+    font-weight: 600;
+    width: 230px;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hr {
+    opacity: 0.5;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 35px;
+    z-index: 9999;
+}
+
+.hr-dissapear {
+    display: none;
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    min-height: 8vh;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 30px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    background-color: rgb(255, 255, 255);
+    z-index: 1000;
+}
+
+li {
+    transition-duration: 0.2s;
+}
+
+.logoImage {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+}
+
+.logoHeading {
+    float: left;
+    color: #707070;
+    font-weight: 100;
+}
+
+.adapt {
+    font-size: 44px;
+    color: rgb(14, 14, 14);
+    font-weight: 600;
+    margin-top: 10px;
+    margin-left: 10px;
+    font-family: 'Ubuntu', sans-serif;
+    letter-spacing: 0.1em;
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+    justify-content: space-around;
+    width: 59%;
+    margin-top: 25px;
+    z-index: 1000;
+}
+
+.nav-links a {
+    text-decoration: none;
+    font-size: 13px;
+    color: rgb(19, 19, 19);
+    padding: 8px;
+    font-weight: 600;
+    z-index: 1000;
+    letter-spacing: 0.08em;
+}
+
+.nav-links a:hover {
+    color: #3f3f3f;
+}
+
+#gethelpnow {
+    color: #eb165d;
+    background-image: none;
+    background-color: white;
+}
+
+#gethelpnow:hover {
+    color: rgb(255, 255, 255);
+    background-image: linear-gradient( #eb165d, #ad1045);
+    border-radius: 200px;
+}
+
+/* 
+This code was taken from a youtube tutorial on responsive navigation bars
+www.youtube.com/watch?v=gXkqy0b4M5g
+*/
+
+.burger {
+    display: none;
+    margin-top: 20px;
+    margin-right: 40px;
+    z-index: 99999999;
+}
+
+.burger div {
+    width: 25px;
+    height: 2px;
+    background-color: rgb(41, 41, 41);
+    margin-top: 5px;
+    transition: all 0.3s ease-in-out;
+}
+
+/* 
+
+    Taken from this navbar video from youtube.
+    https://www.youtube.com/watch?v=gXkqy0b4M5g
+
+*/
+
+.toggle .line1 {
+    transform: rotate(-45deg) translate(-5px, 6px);
+}
+
+.toggle .line2 {
+    opacity: 0;
+}
+
+.toggle .line3 {
+    transform: rotate(45deg) translate(-4px, -5px);
+}
+
+/* 
+
+The dropdown menu structure was taken from css-tricks
+https://css-tricks.com/solved-with-css-dropdown-menus/
+
+*/
+
+nav ul li {
+    position: relative;
+    z-index: 1000;
+}
+
+nav ul li ul {
+    display: none;
+    left: 0;
+    position: absolute;
+    background-color: rgb(255, 255, 255);
+    margin-top: 10px;
+    transition: all 0.3s ease;
+    border-radius: 0px 0px 8px 8px;
+    z-index: 1000;
+}
+
+nav ul li ul li {
+    display: block;
+    justify-content: center;
+    width: 250px;
+    height: 50px;
+    padding-top: 0px;
+    z-index: 1000;
+}
+
+nav ul li ul li:hover {
+    background-color: rgb(238, 238, 238);
+    border-radius: 0px 0px 8px 8px;
+    z-index: 1000;
+}
+
+nav ul li ul li a {
+    display: block;
+    width: 100%;
+    height: 100%;
+    z-index: 1000;
+}
+
+nav ul li:hover ul {
+    display: block;
+    padding-top: 10px;
+    z-index: 1000;
+}
+
+.dropdownlink {
+    display: none;
+}
+
+/* Floats and Absolute Positioning*/
+
+.mainHeader {
+    width: 85%;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+}
+
+.headerPhoto {
+    margin-top: 40px;
+}
+
+.headerPhoto img {
+    width: 70%;
+    float: right;
+    border-radius: 0px 8px 8px 0px;
+}
+
+.headerHeading {
+    position: absolute;
+    top: 50px;
+    left: 10px;
+    background-color: #ffffff;
+    width: 600px;
+    height: 300px;
+    padding-left: 40px;
+    padding-top: 20px;
+    color: #161616;
+    font-size: 23px;
+    border-radius: 10px 10px 10px 10px;
+    border: 1px solid black;
+}
+
+.headerHeading h3 {
+    margin-top: 10px;
+}
+
+#getHelpHeading {
+    font-size: 35px;
+    width: 210px;
+    margin-top: 80px;
+    font-weight: bold;
+}
+
+#getHelpHeading a {
+    text-decoration: none;
+    color: #eb165d;
+    display: block;
+    padding: 8px;
+    padding-left: 14px;
+    border: 1.5px solid #eb165d;
+    border-radius: 90px;
+}
+
+#getHelpHeading a:hover {
+    color: white;
+    background-image: linear-gradient( #eb165d, #ad1045);
+    border-radius: 90px;
+    border: 0px solid white;
+}
+
+.intro {
+    margin-top: 38vw;
+    width: 85%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.phoneHeaderPic {
+    display: none;
+}
+
+.safetyHeading h1 {
+    text-align: center;
+    font-size: 60px;
+    margin-bottom: 40px;
+}
+
+.mobileAlone {
+    display: none;
+}
+
+.safetyHeading h2 {
+    text-align: center;
+    margin-top: 15px;
+    color: #414141;
+    font-size: 25px;
+}
+
+.introduction p {
+    font-size: 18px;
+    line-height: 1.5em;
+    margin-top: 20px;
+    color: #161616;
+}
+
+.introduction {
+    width: 50%;
+    float: right;
+    margin-bottom: 50px;
+}
+
+.sadWoman {
+    margin-top: 40px;
+    border-radius: 10px;
+    width: 45%;
+    margin-bottom: 10px;
+}
+
+.linksHome {
+    padding: 35px;
+}
+
+.linksHome p {
+    font-size: 18px;
+    color: #3f3f3f;
+    margin-top: 10px;
+}
+
+.linksHome a {
+    text-decoration: none;
+    color: #0f0f0f;
+    font-size: 24px;
+    color: #000000;
+}
+
+.linksHome a:hover {
+    color: #eb165d;
+}
+
+.recognisingDomestic {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-bottom: 50px;
+}
+
+.descone {
+    margin-left: 20px;
+    width: 500px;
+}
+
+.refugeSupport {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-bottom: 50px;
+}
+
+.desctwo {
+    margin-left: 20px;
+    width: 500px;
+}
+
+.contactLink {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-bottom: 50px;
+}
+
+.descthree {
+    margin-left: 20px;
+    width: 500px;
+}
+
+/* 
+    
+    Found on CSS TRICKS
+    https://css-tricks.com/snippets/css/scale-on-hover-with-webkit-transition/
+
+*/
+
+.safetyHover {
+    transition: all .2s ease-in-out;
+}
+
+.safetyHover:hover {
+    font-size: 70px;
+}
+
+footer {
+    width: 85%;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #ffffff;
+    height: 400px;
+}
+
+footer a {
+    text-decoration: none;
+    color: #0f0f0f;
+}
+
+footer a:hover {
+    color: #eb165d;
+}
+
+.footerLinksOne {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.footerLinksOne div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 15px;
+}
+
+.footerLinksOne a {
+    font-size: 18px;
+}
+
+.main {
+    width: 90%;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.aside {
+    width: 20%;
+    height: 400px;
+    float: right;
+    border-left: 1px solid black;
+    margin-top: 150px;
+}
+
+.mainContentLeft {
+    float: left;
+    width: 65%;
+    margin-top: 40px;
+    margin-left: 10px;
+}
+
+.mainContentLeft ul {
+    margin-left: 40px;
+}
+
+.mainContentLeft h1, .mainContentLeft h3, .mainContentLeft h2, .mainContentLeft ul, .mainContentLeft li {
+    line-height: 1.4em;
+    margin-bottom: 25px;
+}
+
+.mainContentLeft p {
+    line-height: 1.4em;
+    margin-bottom: 25px;
+    font-size: 16px;
+}
+
+.CoerciveC a {
+    text-decoration: none;
+    color: #0f0f0f;
+}
+
+.CoerciveC a:hover {
+    color: #eb165d;
+}
+
+.gaslighting a {
+    text-decoration: none;
+    color: #eb165d;
+}
+
+/* 
+
+PHOTO GRID TAKEN FROM W3SCHOOLS
+https://www.w3schools.com/howto/howto_css_image_grid_responsive.asp
+
+
+*/
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 4px;
+}
+
+.column {
+    flex: 15%;
+    max-width: 40%;
+    padding: 0 4px;
+}
+
+.column img {
+    margin-top: 18px;
+    vertical-align: middle;
+    max-width: 90%;
+}
+
+.AboutUsHeader {
+    width: 88%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 50px;
+    position: relative;
+}
+
+.AboutUsHeader div {
+    width: 35%;
+    float: right;
+    margin-top: -40%;
+}
+
+.AboutUsHeader img {
+    width: 60%;
+    border-radius: 18px 18px 18px 18px;
+}
+
+.AboutUsHeader h1 {
+    margin-top: 20px;
+    font-size: 44px;
+}
+
+.AboutUsHeader h3 {
+    margin-top: 20px;
+    font-size: 30px;
+}
+
+.refuge {
+    font-size: 20px;
+    margin-top: 140px;
+}
+
+.AboutUsHeader div div {
+    margin-top: 10px;
+    float: left;
+    font-size: 35px;
+    border: 1.5px solid #eb165d;
+    width: 370px;
+    margin-top: 50px;
+    border-radius: 90px;
+    font-weight: bold;
+}
+
+.AboutUsHeader div div a {
+    text-decoration: none;
+    color: #eb165d;
+    display: block;
+    padding: 8px;
+    padding-left: 14px;
+}
+
+.AboutUsHeader div div a:hover {
+    color: white;
+    background-image: linear-gradient( #eb165d, #ad1045);
+    border-radius: 90px;
+    border: none;
+}
+
+.refuge:hover {
+    color: #eb165d;
+}
+
+.aboutusimageone {
+    display: block;
+}
+
+.aboutusimagetwo {
+    display: none;
+}
+
+.aboutUsMain {
+    width: 92%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.aboutUsMain p {
+    font-size: 18px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.aboutUsMain h1 {
+    margin-top: 60px;
+}
+
+.aboutUsMain ul {
+    margin-left: 30px;
+    margin-top: 20px;
+}
+
+.aboutUsMain li {
+    margin-bottom: 20px;
+    font-size: 20px;
+}
+
+.footerAboutUs {
+    margin-top: 1500px;
+}
+
+/*
+
+CONTACT FORM FROM w3Schools - https://www.w3schools.com/howto/howto_css_contact_form.asp
+
+*/
+
+input[type=text], select, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+}
+
+input[type=submit] {
+    background-color: #eb165d;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 24px;
+    cursor: pointer;
+}
+
+input[type=submit]:hover {
+    background-color: #c4134e;
+}
+
+.container {
+    border-radius: 10px;
+    background-color: #f2f2f2;
+    padding: 20px;
+}
+
+/* MEDIA RULES*/
+
+@media screen and (max-width: 1650px) {
+    .headerHeading {
+        left: -40px;
+        width: 500px;
+        font-size: 18px;
+    }
+    .footerAboutUs {
+        margin-top: 1700px;
+    }
+}
+
+@media screen and (max-width: 1199px) {
+    .nav-links a {
+        font-size: 13px;
+        z-index: 1000;
+    }
+    .nav-links {
+        width: 60%;
+    }
+    .headerPhoto img {
+        width: 60%;
+    }
+    .headerHeading {
+        top: 0;
+        left: 0;
+        width: 40%;
+    }
+    .intro {
+        margin-top: 33vw;
+    }
+    #getHelpHeading {
+        margin-top: 20px;
+    }
+    .headerHeading h1 {
+        font-size: 40px;
+    }
+    .logoHeading {
+        display: none;
+    }
+    .introduction {
+        width: 100%;
+    }
+    .sadWoman {
+        width: 70%;
+    }
+    .diss {
+        display: none;
+    }
+    .headerHeading {
+        border: none;
+    }
+    .aside {
+        width: 25%;
+    }
+    .safetyHeading h1 {
+        text-align: center;
+        font-size: 40px;
+        margin-bottom: 40px;
+    }
+    .safetyHeading h1:hover {
+        text-align: center;
+        font-size: 45px;
+        margin-bottom: 40px;
+    }
+    .AboutUsHeader {
+        display: flex;
+        flex-direction: column;
+    }
+    .AboutUsHeader img {
+        width: 90%;
+    }
+    .AboutUsHeader div {
+        width: 95%;
+        margin-top: 5%;
+        text-align: center;
+    }
+    .refuge {
+        margin-bottom: 50px;
+        margin-top: 40px;
+    }
+    .AboutUsHeader div div {
+        float: none;
+        font-size: 35px;
+        margin-left: auto;
+        margin-right: auto;
+        width: 370px;
+    }
+    .aboutusimageone {
+        display: none;
+    }
+    .aboutusimagetwo {
+        display: block;
+        width: 90%;
+        margin-left: auto;
+        margin-right: auto;
+        border-radius: 18px 18px 18px 18px;
+    }
+    .footerAboutUs {
+        margin-top: 1800px;
+    }
+}
+
+@media screen and (max-width: 991px) {
+    body {
+        overflow-x: hidden;
+    }
+    .aside {
+        width: 100%;
+        border-left: none;
+    }
+    .column {
+        flex: 50%;
+        max-width: 50%;
+    }
+    .mainContentLeft {
+        width: 100%;
+        margin-top: 40px;
+        margin-left: 10px;
+    }
+    .address {
+        display: none;
+    }
+    .phone {
+        font-size: 12px;
+    }
+    .safeexitbtn {
+        font-size: 14px;
+        display: flex;
+        justify-content: center;
+    }
+    /* 
+    This code was taken from a youtube tutorial on responsive navigation bars
+    www.youtube.com/watch?v=gXkqy0b4M5g
+    */
+    .nav-links {
+        position: absolute;
+        right: 0px;
+        height: 102vh;
+        top: -6vw;
+        background-color: white;
+        display: flex;
+        align-items: center;
+        width: 100%;
+        flex-direction: column;
+        transform: translateX(100%);
+        transition: transform 0.4s ease-in;
+    }
+    .nav-links a {
+        font-size: 13px;
+    }
+    .nav-links li {
+        opacity: 1;
+    }
+    .burger {
+        display: block;
+        cursor: pointer;
+    }
+    /* 
+        This I came up with on my own, when the screen size is 991 or smaller, all the links are visible
+        which makes them line up in a menu instead of a hover over menu for mobile devices and tablets
+    */
+    .dropdownlink {
+        display: block;
+    }
+    .dropdownlink a {
+        color: #3f3f3f;
+    }
+    .dropdownlink a:hover {
+        color: black;
+    }
+    nav ul li:hover ul {
+        display: none;
+    }
+    /* 
+    This would absolutley not work for me as a class so I had to use ID's
+    */
+    #gethelpnow {
+        font-size: 20px;
+    }
+    #aboutus {
+        font-size: 20px;
+    }
+    #aboutus:hover {
+        color: white;
+        background-color: #0f0f0f;
+        border-radius: 15px;
+    }
+    #contactus {
+        font-size: 20px;
+    }
+    #contactus:hover {
+        color: white;
+        background-color: #0f0f0f;
+        border-radius: 15px;
+    }
+    #donatenow {
+        font-size: 20px;
+    }
+    #donatenow:hover {
+        color: white;
+        background-color: #0f0f0f;
+        border-radius: 15px;
+    }
+    #charityshop {
+        font-size: 20px;
+    }
+    #charityshop:hover {
+        color: white;
+        background: #0f0f0f;
+        border-radius: 15px;
+    }
+    #home {
+        font-size: 20px;
+    }
+    #home:hover {
+        color: white;
+        background: #0f0f0f;
+        border-radius: 15px;
+    }
+    .headerHeading h3 {
+        display: none;
+    }
+    .intro {
+        margin-top: 40vw;
+    }
+    #getHelpHeading {
+        margin-top: 20px;
+    }
+    .headerHeading h1 {
+        font-size: 30px;
+    }
+    .headerHeading {
+        height: 200px;
+    }
+    .sadWoman {
+        width: 65%;
+    }
+    .AboutUsHeader {
+        display: flex;
+        flex-direction: column;
+    }
+    .AboutUsHeader img {
+        width: 100%;
+    }
+    .AboutUsHeader h3 {
+        font-size: 25px;
+    }
+    .AboutUsHeader div div {
+        float: none;
+        font-size: 25px;
+        margin-left: auto;
+        margin-right: auto;
+        width: 280px;
+    }
+    .footerAboutUs {
+        margin-top: 2200px;
+    }
+}
+
+.nav-active {
+    transform: translateX(0%);
+}
+
+@media screen and (max-width: 767px) {
+    .details {
+        display: none;
+    }
+    header {
+        display: flex;
+        justify-content: center;
+        height: 40px;
+    }
+    .headerPhoto img {
+        display: none;
+    }
+    .headerHeading {
+        position: relative;
+        text-align: center;
+        background-color: #ffffff;
+        width: 100%;
+        color: #161616;
+        font-size: 23px;
+        margin-left: -20px;
+    }
+    .phoneHeaderPic {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 10px;
+        border-radius: 10px;
+    }
+    #getHelpHeading {
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .intro {
+        margin-top: 20px;
+    }
+    .column {
+        flex: 100%;
+        max-width: 100%;
+    }
+    .aboutUsMain h1 {
+        text-align: center;
+    }
+    .footerAboutUs {
+        margin-top: 2000px;
+    }
+}
+
+/* 
+    
+    Found on CSS TRICKS
+    https://css-tricks.com/snippets/css/scale-on-hover-with-webkit-transition/
+
+    */
+
+footer {
+    transform: scale(0.8);
+}
+
+.main {
+    font-size: 90%;
+}
+
+@media screen and (max-width: 575px) {
+    .safeexitbtn {
+        width: 100%;
+        height: 100%;
+    }
+    .safeexitbtn a {
+        font-size: 15px;
+        display: block;
+    }
+    header {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 40px;
+        padding: 0;
+    }
+    .intro {
+        margin-top: 40px;
+    }
+    .sadWoman {
+        width: 100%;
+    }
+    footer {
+        transform: scale(0.7);
+    }
+    .footerAboutUs {
+        margin-top: 2500px;
+    }
+}
